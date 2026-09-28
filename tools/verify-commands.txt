@@ -1,0 +1,7 @@
+# 无限箭袋 —— 运行时验证命令（RCON，控制台身份）
+list
+summon minecraft:item 0 100 0 {Item:{id:"endlessquiver:quiver",Count:1b},PickupDelay:32767s,Age:-32768s}
+data get entity @e[type=minecraft:item,limit=1]
+data merge entity @e[type=minecraft:item,limit=1] {Item:{tag:{StoredArrow:{id:"minecraft:arrow",Count:1b}}}}
+data get entity @e[type=minecraft:item,limit=1] Item.tag.StoredArrow
+reload

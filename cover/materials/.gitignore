@@ -1,0 +1,3 @@
+# Third-party / vanilla assets — not redistributed (see README section 7).
+# These PNGs are extracted from the vanilla client.jar and stay local.
+*.png

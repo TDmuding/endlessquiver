@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "ESE",
+    "NON",
+    "EBE"
+  ],
+  "key": {
+    "E": {
+      "item": "minecraft:echo_shard"
+    },
+    "S": {
+      "item": "minecraft:nether_star"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "O": {
+      "item": "minecraft:ender_eye"
+    },
+    "B": {
+      "item": "minecraft:netherite_block"
+    }
+  },
+  "result": {
+    "item": "endlessquiver:quiver",
+    "count": 1
+  }
+}

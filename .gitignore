@@ -1,0 +1,35 @@
+# ---- Gradle ----
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ---- IDE ----
+.idea/
+*.iml
+*.ipr
+*.iws
+.eclipse/
+.settings/
+.classpath
+.project
+.vscode/
+
+# ---- dev run directories ----
+run/
+run-data/
+
+# ---- third-party dependency (drop Curios jar here, see README) ----
+libs/
+
+# ---- misc ----
+*.log
+Thumbs.db
+Desktop.ini
+
+# ---- Python ----
+__pycache__/
+*.pyc
+
+# ---- cover drafts (regenerate with: make_cover.ps1 -Text / -Mats) ----
+cover/*_text.png
+cover/*_mats.png

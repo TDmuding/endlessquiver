@@ -1,0 +1,8 @@
+{
+  "item.endlessquiver.quiver": "无限箭袋",
+  "container.endlessquiver.quiver": "无限箭袋",
+  "tooltip.endlessquiver.empty": "空 - 还没记录箭矢",
+  "tooltip.endlessquiver.recorded": "已记录：%s",
+  "tooltip.endlessquiver.hint": "装备到背后的饰品栏即可正常射箭",
+  "tooltip.endlessquiver.open": "手持时右键打开储物格"
+}
