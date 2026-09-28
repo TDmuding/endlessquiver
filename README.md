@@ -1,6 +1,15 @@
 # 无限箭袋（Endless Quiver）
 
-![封面](cover/cover_github_1280x640.png)
+![Endless Quiver — a Minecraft 1.20.1 Forge curio](cover/cover_github_1280x640.png)
+
+**Endless Quiver** is a Minecraft **1.20.1 Forge** mod (requires **Curios API**).
+A back-slot curio with a single *record slot*: show it an arrow — vanilla, tipped / potion, or modded — and it remembers that arrow type,
+handing the arrow itself straight back to your inventory. Equip it in the Curios **back** slot and your bow or crossbow gets an
+**unlimited supply** of the recorded arrow.
+
+*Keywords: infinite arrows · unlimited arrow supply · quiver curio · tipped arrows · potion arrows · arrow source · 1.20.1 Forge · Curios.*
+
+---
 
 Minecraft **1.20.1 Forge** 模组，以 **Curios API** 为前置。
 
