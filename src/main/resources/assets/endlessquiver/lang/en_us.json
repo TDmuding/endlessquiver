@@ -3,6 +3,6 @@
   "container.endlessquiver.quiver": "Endless Quiver",
   "tooltip.endlessquiver.empty": "Empty - no arrow recorded yet",
   "tooltip.endlessquiver.recorded": "Recorded: %s",
-  "tooltip.endlessquiver.hint": "Equip in a back slot and shoot as usual",
+  "tooltip.endlessquiver.hint": "Equip it as a back accessory and shoot as usual",
   "tooltip.endlessquiver.open": "Right-click while holding to open"
 }

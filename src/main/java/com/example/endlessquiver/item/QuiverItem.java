@@ -29,7 +29,7 @@ import java.util.Optional;
  * 放进箱子或者在玩家之间交易时，记录都跟着走。记录的只是「哪一种箭」，箭矢本身不会被收走。
  * <p>
  * 实现 {@link ICurioItem} 即可让物品自动获得 Curios 的 {@code ICurio} capability；
- * 但“能不能放进背槽”是由物品标签 {@code data/curios/tags/items/back.json} 决定的。
+ * 但“能不能放进背饰栏”是由物品标签 {@code data/curios/tags/items/back.json} 决定的。
  */
 public class QuiverItem extends Item implements ICurioItem {
 

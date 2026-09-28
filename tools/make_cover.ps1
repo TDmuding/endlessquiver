@@ -18,10 +18,10 @@ $INFO     = 'Minecraft 1.20.1  ·  Forge  ·  需要 Curios API'
 $BULLETS  = @(
   '袋中的箭不会消耗，一支顶无限支',
   '射出的箭不能捡回，杜绝刷物品',
-  '手持右键打开储物格（任意箭矢）',
+  '手持右键打开记录界面（任意箭矢）',
   '下界之星 + 回响碎片 + 末影之眼 + 下界合金'
 )
-$FOOTER   = 'endlessquiver  ·  Curios 背部饰品'
+$FOOTER   = 'endlessquiver  ·  Curios 背饰'
 $MATFILES = @('nether_star', 'echo_shard', 'ender_eye', 'netherite_ingot', 'netherite_block') |
         ForEach-Object { Join-Path (Join-Path $OUTDIR 'materials') "$_.png" }
 
@@ -101,7 +101,7 @@ function New-Cover([int]$W, [int]$H, [string]$Out, [string]$Mode) {
     }
   }
 
-  # 4) 图标背后的柔光（同心椭圆，由外向内加浓）
+  # 4) 图标外围的柔光（同心椭圆，由外向内加浓）
   $halo = if ($Mode -eq 'plain') { 0.62 } else { 0.95 }
   for ($i = 26; $i -ge 1; $i--) {
     $ex = $iconX + $iconH / 2 - ($iconH * $halo) * $i / 26
