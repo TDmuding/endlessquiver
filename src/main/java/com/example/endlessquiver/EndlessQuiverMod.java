@@ -21,8 +21,8 @@ import org.slf4j.Logger;
  * <p>
  * 物品 {@code endlessquiver:quiver} 有两个用途：
  * <ul>
- *     <li>装备到 Curios 的 back（背饰）栏 —— 为弓/弩无限供应里面记录的那一种箭矢（不消耗）；</li>
- *     <li>手持右键 —— 打开它自己的 1 格储物界面（不需要潜行）。</li>
+ *     <li>装备到 Curios 的 back（背饰）栏 —— 为弓/弩无限供应里面记录的那一种箭矢；</li>
+ *     <li>手持右键 —— 打开它自己的 1 格记录界面（不需要潜行）。</li>
  * </ul>
  */
 @Mod(EndlessQuiverMod.MODID)

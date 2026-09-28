@@ -20,9 +20,9 @@ import net.minecraftforge.fml.common.Mod;
 /**
  * 模组的三个核心逻辑：
  * <ol>
- *     <li>{@link #onLivingGetProjectile} —— 把装备着的箭袋里的箭矢“喂”给任何弓/弩（无限供应、不消耗）；</li>
+ *     <li>{@link #onLivingGetProjectile} —— 把装备着的箭袋里的箭矢“喂”给任何弓/弩；</li>
  *     <li>{@link #onArrowJoinLevel} —— 由箭袋供应的箭矢落地后不可捡回；</li>
- *     <li>{@link #onRightClickItem} / {@link #onRightClickBlock} —— 手持箭袋右键打开储物界面（不需要潜行）。</li>
+ *     <li>{@link #onRightClickItem} / {@link #onRightClickBlock} —— 手持箭袋右键打开记录界面（不需要潜行）。</li>
  * </ol>
  */
 @Mod.EventBusSubscriber(modid = EndlessQuiverMod.MODID)
@@ -37,8 +37,7 @@ public class CommonEventHandler {
      * {@code LivingGetProjectileEvent}。因为这是所有武器取弹药的唯一汇聚点，所以本方法对
      * 原版弓、原版弩以及任何走标准流程的模组弓都生效。
      * <p>
-     * 关键点：返回的是一个<b>副本</b>。弓拿到弹药后会执行 {@code ItemStack#shrink(1)}，
-     * 被消耗的是这个副本，玩家背包与箭袋里的物品一个都不会少。
+     * 关键点：返回的是一个<b>副本</b>。弓拿到弹药后会执行 {@code ItemStack#shrink(1)}，被消耗的是这个副本。
      */
     @SubscribeEvent
     public static void onLivingGetProjectile(LivingGetProjectileEvent event) {
@@ -55,7 +54,7 @@ public class CommonEventHandler {
                 && !weaponItem.getAllSupportedProjectiles().test(arrow)) {
             return;
         }
-        // 决策：只要箭袋里装了箭，就优先用箭袋的箭，背包里的箭不会被消耗
+        // 决策：只要箭袋里装了箭，就优先用箭袋的箭
         event.setProjectileItemStack(arrow.copy());
     }
 
