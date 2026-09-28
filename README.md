@@ -249,38 +249,7 @@ Reloading!                                      ← 数据包（含背饰标签�
 
 ---
 
-## 七、封面 / 宣传图
-
-封面**默认只有箭袋本体**（其余只有背景渐变 + 类 MC 噪点 + 一点青色柔光）：没有文字、没有材料行、没有投影、没有边框。
-脚本：`tools/make_cover.ps1`（Windows PowerShell 5.1 + `System.Drawing`，不需要 Pillow）。
-
-| 文件 | 尺寸 | 用途 |
-| --- | --- | --- |
-| `cover/cover_mcmod_1920x1200.png` | 1920×1200（8:5） | **MC百科**模组封面（百科要求 8:5，最小 240×150） |
-| `cover/cover_github_1280x640.png` | 1280×640（2:1） | **GitHub** 仓库 Social preview / README 顶部横幅 |
-| `cover/cover_mcmod_640x400.png` | 640×400（8:5） | 同上内容的缩小版，传百科小图或当缩略图用 |
-| `cover/cover_*_mats.png` | 同上 | 额外带底部合成材料行，加 `-Mats` 才生成 |
-| `cover/cover_*_text.png` | 同上 | 带文字版（标题 / 版本 / 卖点 / 材料行 / 页脚），加 `-Text` 才生成 |
-
-```powershell
-powershell -ExecutionPolicy Bypass -File tools\make_cover.ps1          # 只有箭袋（默认，3 个尺寸）
-powershell -ExecutionPolicy Bypass -File tools\make_cover.ps1 -Mats    # 再额外生成 *_mats.png
-powershell -ExecutionPolicy Bypass -File tools\make_cover.ps1 -Text    # 再额外生成 *_mats.png 与 *_text.png
-```
-
-带文字版的文案在脚本顶部的 `$TITLE` / `$SUBTITLE` / `$INFO` / `$BULLETS` / `$FOOTER`。
-
-封面里用到的 5 个原版材料图标（下界之星、回响碎片、末影之眼、下界合金锭、下界合金块）来自原版
-`client.jar`（版权归 Mojang），**不入库**：需要 `-Mats` / `-Text` 模式时，自己从
-`<Forge 缓存>/minecraft_repo/versions/1.20.1/client.jar` 里把
-`assets/minecraft/textures/item/{nether_star,echo_shard,ender_eye,netherite_ingot}.png`
-与 `assets/minecraft/textures/block/netherite_block.png` 解到 `cover/materials/` 即可。
-
-> 提示：`make_cover.ps1` 含中文，必须保存为 **UTF-8 with BOM** 才能在 PowerShell 5.1 下正确解析。
-
----
-
-## 八、开发说明
+## 七、开发说明
 
 本模组代码由 **AI（DeepSeek Harness）在人类指导下编写**；需求裁定、配方设计、美术（物品图标与封面）与实机验收由作者完成。
 仓库已启用 `ai-generated` 主题标签，请按需参考。
