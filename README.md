@@ -277,3 +277,10 @@ powershell -ExecutionPolicy Bypass -File tools\make_cover.ps1 -Text    # 再额�
 与 `assets/minecraft/textures/block/netherite_block.png` 解到 `cover/materials/` 即可。
 
 > 提示：`make_cover.ps1` 含中文，必须保存为 **UTF-8 with BOM** 才能在 PowerShell 5.1 下正确解析。
+
+---
+
+## 八、开发说明
+
+本模组代码由 **AI（DeepSeek Harness）在人类指导下编写**；需求裁定、配方设计、美术（物品图标与封面）与实机验收由作者完成。
+仓库已启用 `ai-generated` 主题标签，请按需参考。
